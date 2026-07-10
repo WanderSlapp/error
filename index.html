@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ny">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderSlapp - Server Status</title>
+    <style>
+        /* Masitayilo Onse a Tsamba */
+        body {
+            background-color: #0d1117; /* Background yakuda yakuchuda */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px 20px;
+            background: #161b22; /* Bokosi lamkati lowoneka bwino */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 1px solid #21262d;
+            margin: 20px;
+        }
+
+        /* Logo kapena Mutu waukulu */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        /* Mawu a Green Owala Kwambiri mu Header komanso ma Spans */
+        .bright-green {
+            color: #00ff66 !important; /* Green owala kwambiri */
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+        }
+
+        /* Chizindikiro choti Server ili pansi koma mwa ukatswiri */
+        .status-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        /* Mauthenga a Tsamba */
+        p.message {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #c9d1d9;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .info-text {
+            font-size: 1rem;
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+
+        /* Ma Links/Mabatani ochezera */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        /* Batani la WhatsApp */
+        .whatsapp {
+            background-color: #25D366;
+            color: #ffffff;
+        }
+        .whatsapp:hover {
+            background-color: #1ebd58;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Batani la Email */
+        .email {
+            background-color: #ea4335;
+            color: #ffffff;
+        }
+        .email:hover {
+            background-color: #d93025;
+            box-shadow: 0 0 15px rgba(234, 67, 53, 0.4);
+        }
+
+        /* Batani la Facebook */
+        .facebook {
+            background-color: #1877F2;
+            color: #ffffff;
+        }
+        .facebook:hover {
+            background-color: #166fe5;
+            box-shadow: 0 0 15px rgba(24, 119, 242, 0.4);
+        }
+
+        /* Ma foni akakhala ang'onoang'ono */
+        @media (max-width: 480px) {
+            .social-links {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="bright-green">WanderSlapp</h1>
+        </header>
+
+        <div class="status-icon">⚙️ Error</div>
+
+        <p class="message">
+            Pepani kwambiri ma customer athu pa nthawi ino, chifukwa simungathe kuchita chilichonse pa app ino chifukwa cha <span class="bright-green">Vuto lama Servers athu</span> sakuyenda bwino, yesaninso kulowa nthawi ina. Tikonza vutoli posachedwapa.
+        </p>
+
+        <hr style="border: 0; border-top: 1px solid #21262d; margin-bottom: 25px;">
+
+        <p class="info-text">Ngati mukufuna kudziwa zambili tipezeni pa njira zili mmusizi:</p>
+
+        <div class="social-links">
+            <a href="https://wa.me/265990914737" target="_blank" class="btn whatsapp">WhatsApp</a>
+            
+            <a href="mailto:wanderslapp1@gamail.com" class="btn email">Email</a>
+            
+            <a href="https://facebook.com" target="_blank" class="btn facebook">Facebook</a>
+        </div>
+    </div>
+
+</body>
+</html>
